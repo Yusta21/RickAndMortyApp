@@ -23,3 +23,29 @@ func generalConfigureButton(button:UIButton){
     
 
 }
+func generalConfigureView(view:UIView){
+    
+    view.layer.cornerRadius = 10
+    view.layer.shadowOffset = CGSize(width: 0, height: 0)
+    view.layer.shadowOpacity = 0.6
+    view.layer.shadowRadius = 4.0
+    view.layer.borderWidth = 2
+    view.backgroundColor = UIColor.lightGray
+    view.layer.shadowColor = CGColor(red: 0.500, green: 0.827, blue: 0.077, alpha: 1)
+    view.layer.borderColor = CGColor(red: 0.004, green: 0.792, blue: 0.843, alpha: 1)
+}
+
+
+func generalConfigureImageView(image:UIImageView){
+    
+    image.layer.borderColor = CGColor(red: 0.500, green: 0.827, blue: 0.077, alpha: 1)
+    image.layer.borderWidth = 2
+    image.layer.cornerRadius = 10
+    
+
+}
+
+func generalConfigureRoundedButton(button:UIButton){
+    
+    button.layer.cornerRadius = 10
+}

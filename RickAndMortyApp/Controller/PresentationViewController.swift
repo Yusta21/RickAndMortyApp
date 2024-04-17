@@ -8,22 +8,39 @@
 import UIKit
 
 class PresentationViewController: UIViewController {
+    
+    
+    
+    
+    @IBOutlet weak var introLabel: UILabel!
+    @IBOutlet weak var charactersButton: UIButton!
+    
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        introLabel.text = "Noel Hernandez Yusta \n\nnoelyusta@hotmail.com \n\nRick and Morty App"
+        introLabel.adjustsFontSizeToFitWidth = true
+        generalConfigureButton(button: charactersButton)
+        charactersButton.titleLabel?.adjustsFontSizeToFitWidth = true
+    
+        
+        
+        
         // Do any additional setup after loading the view.
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func charactersPressed(_ sender: Any) {
+        
+        let charactersViewController: CharactersViewController = self.storyboard?.instantiateViewController(withIdentifier: "CharactersViewController") as! CharactersViewController
+        
+        self.navigationController?.pushViewController(charactersViewController, animated: true)
+        
     }
-    */
-
+    
 }
+
