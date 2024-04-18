@@ -3,7 +3,9 @@ import UIKit
 
 
 class APIManager {
-    func fetchData(delegate: APIResponseDelegate,API:String) {
+    
+    func fetchData(delegate: APIResponseDelegate, API:String) {
+        
         guard let url = URL(string: API) else {
             let error = NSError(domain: "", code: 0, userInfo: [NSLocalizedDescriptionKey: "URL no válida"])
             delegate.didFailToFetchDataWithError(error: error)

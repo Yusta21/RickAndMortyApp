@@ -35,6 +35,8 @@ class DetailCharacterViewController: UIViewController {
         setValues()
     }
     
+   
+    
     func setValues(){
         
         if let url = character?.image {

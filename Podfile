@@ -8,6 +8,5 @@ target 'RickAndMortyApp' do
   # Pods for RickAndMortyApp
 
   pod 'Kingfisher'
-  pod 'Alamofire'
 
 end

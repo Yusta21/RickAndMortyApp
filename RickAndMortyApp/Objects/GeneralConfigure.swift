@@ -49,3 +49,11 @@ func generalConfigureRoundedButton(button:UIButton){
     
     button.layer.cornerRadius = 10
 }
+
+func generalConfigureSearchBar(searchBar:UITextField){
+    
+    searchBar.layer.borderColor = CGColor(red: 0.500, green: 0.827, blue: 0.077, alpha: 1)
+    searchBar.layer.borderWidth = 1.5
+    searchBar.layer.cornerRadius = 10
+}
+

@@ -22,7 +22,7 @@ class PresentationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        introLabel.text = "Noel Hernandez Yusta \n\nnoelyusta@hotmail.com \n\nRick and Morty App"
+        introLabel.text = "Noel Hernández Yusta \n\nnoelyusta@hotmail.com \n\nRick and Morty App"
         introLabel.adjustsFontSizeToFitWidth = true
         generalConfigureButton(button: charactersButton)
         charactersButton.titleLabel?.adjustsFontSizeToFitWidth = true
